@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap Tutorial</title>
+
+  <!-- viewport is used for depicted the oage on mobiles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Connect Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Connect  Bootstrap JS-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Define header of the website -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <!--Defines the button when opening the website using a small screen-->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Navigation</span>
+          <!-- Defines a three small lines on a menu button for small screens -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"> My Website</a>
+      </div>
+
+      <!-- Collapse allows squeeze the menu-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another Action</a></li>
+              <li><a href="#">Something else</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One More Link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Located on the left-->
+        <form class="navbar-form navbar-left" role="search">
+          <!-- form-group creates indents between the current block div and the button Send-->
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button class="btn btn-success btn-md " >Send</button>
+        </form>
+
+        <!-- Create a list on the right-->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <!-- <b class="caret"> creates a triangle on the button -->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another Action</a></li>
+              <li><a href="#">Something Else</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separate Link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+      <!-- <span class="caret"></span> adds an arrow on the list button -->
+      List <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <!-- Defines a header in the list -->
+      <li class="dropdown-header">Web Tools</li>
+      <li><a href="#">CSS</a></li>
+      <!-- Can desiable some elements -->
+      <li class="disabled"><a href="#">HTML</a></li>
+      <li><a href="#">Jinja</a></li>
+      <!-- To devide the list use devider class -->
+      <li class="divider"></li>
+      <li class="dropdown-header">Languages</li>
+      <li><a href="#">JS</a></li>
+      <li><a href="#">Python</a></li>
+    </ul>
+  </div>
+
+  <!-- jQuery. Put it in the end of the body to prevent too long downloading -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

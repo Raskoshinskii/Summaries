@@ -1,0 +1,93 @@
+Strings:
+- 3 ways of string formatting?
+- How to get an index of an element in a string?
+- How to substitute a string element?
+- Write a code that finds only unique elements from a string
+**RegExp**
+  - What are metacharacters?
+
+Lambda Functions:
+- Simple lambda example (coding)
+- Lambda function saved into a variable (coding)
+- Lambda function that uses another lambda function
+
+Lists:
+- What is a list in Python?
+- Is a list an ordered data structure?
+- Add/Del list methods
+- How to sort values in a list?
+
+Tuples
+- What is a tuple in Python?
+- Is a tuple an ordered data structure?
+- If a tuple element has mutable data structure, can we change it?
+
+Sets
+- What is a set in Python?
+- Is a set an ordered data structure?
+- Add/Del set methods
+
+Dictionary
+- What is a dictionary in Python?
+- Add/Del dictionary methods
+
+General Questions
+- What happens with a variable if it isn't linked with any object
+- What a variable in Python?
+- What return range(10)
+- What is an iterator and generator?
+- Write code using map function
+  - What data type returns map function
+- Write code using filter and zip function. What is the difference between map and filter functions?
+- What is the difference between sort() and sorted() functions?
+- __init__.py what it means?
+- Where searching will be faster in a list or in a set?
+- Can we add a mutable data structure in a set?
+- What is the difference between *args and **kwargs, the difference between * and **
+
+OOP in Python
+- What is OOP?
+- To what class does belong all classes in Python?
+- Difference between structural programming and OOP?
+- What happens when a class is invoked?
+- What are attributes and methods of a class?
+- Why keyword self must be provided in a class method?
+- What built-in attributes and functions do you know?
+- How attribute value can be changed for an object?
+- Сan new attributes be created outside a class (for an object)? Is it worth doing?
+- What do we call a method if it doesn't take in an object?
+
+- What do we call methods with __method__ and what makes them unique?
+- What are constructor and destructor of a class? Provide an example
+- How to allow creating only certain attributes for a class?
+- What will happen if we have methods with the same name?
+- Attributes of a class and an object. The main difference between them?
+- What is the difference between global and local variables?
+
+- What is inheritance?
+- Сan a class be inherited from many classes, not only one?
+- What happens with the methods in a child class if they have the same name from parental class?
+- What is the advantage of a function super()
+
+- What is polymorphism?
+- What is encapsulation?
+- What are access modifiers, main types? Can methods have different access modifiers?
+- How private attributes must be accessed? (hint: methods)
+
+- What is a class method (hint: @classmethod)
+- What is a static method (hint: @staticmethod)
+- What is a instance method?
+- What is method overloading and operator overloading, the main difference?
+- *args, **kwargs?
+
+- What is a decorator, write any simple decorator
+- What is a closure? What is a wrapper function?
+- If you have a function and a decorator let's say in a Jupyter notebook, can you use @dec_name?
+- Main Built-In Decorators in Python?
+- What is a @property and property class, the main difference between them?
+- What is a descriptor?
+
+- What is an abstract class, why do we need them and how to create them?
+- Can we create an object from an abstract class?
+- What must be done with abstract attributes and methods?
+- How do you understand the phrase: Mutual interface between child classes?

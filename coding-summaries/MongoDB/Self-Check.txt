@@ -1,0 +1,77 @@
+**MongoDB Fundamentals**
+1. What is a MongoDB? 
+2. Main definitions:
+    - Collection;
+    - Document;
+3. What is the main advantage of a collection in comparison with a table? 
+4. What is the main advantage of a document? 
+5. Name the main advantage of a document-oriented data base 
+6. What do you know about replication mechanism in MongoDB? 
+7. What is the main difference between data back-up and replication? 
+8. What is sharding? 
+9. What do you know about GridFS in MongoDB? 
+10. What do you know about cursors? 
+11. Is db structure important in MongoDB?
+12. How two documents of different collections can be linked?
+12. What other types of NoSQL databases do you know?
+
+Indexes
+1. What is an index?
+2. What type of indexes in MongoDB do you know?
+3. How many indexes are allowed for a single collection?
+4. How to allow inserting documents only with unique field values?
+5. How to list all indexes for a collection?
+6. How to create/drop an index?
+
+Aggregation
+1. Tell about aggregation and name 3 main types of aggregation in MongoDB
+2. Is order of operations in pipeline important?
+3. Name the main operators that can be used in pipeline aggregation
+4. Does $group has a memory limitation?
+5. Tell about map-reduce algorithm
+6. Make an example of a single purpose aggregation
+
+**Practice **
+
+Documents Inserting
+1. How to insert a document into a collection? (demonstrate in 3 different ways) 
+2. What is the difference between insert and insertMany? 
+
+Documents Update
+1. How to update a document? (demonstrate in 3 different ways) 
+2. What $set means? 
+3. How to delete a field in a Document? 
+4. How to rename a field name in a Document?
+5. Add an embedded document into a document 
+6. Replace a document 
+7. Increase a numeric value of a field 
+8. Tell about $min and $max operators
+
+Documents and Dtabase Deletion
+1. How to delete a document? (demonstrate in 3 different ways)
+2. Comare drop() and remove(). What is better? 
+
+Collection
+1. How to create a collection? (demonstrate in 2 different ways) 
+2. How to rename a collection? 
+
+Arrays
+1. How to set an element in an array to null? 
+2. How to access elements of embedded documents? 
+3. How to access elements of an array? 
+4. How to delete an element in an array? (demonstrate in 2 different ways) 
+5. What is the difference between $pop and $pull and $pullAll?
+5. How to add an element to an array? 
+6. What operator should be used to insert a value if it doesn't exist in an array? 
+
+Aggregation
+1. Demonstrate single purpose aggreagation
+2. Groups documents that meet a specific condition
+4. Make a query with $unwind
+3. Groups documents and use $limit, $sort
+
+Queries with conditions
+1. Make a query using 2 conditions
+2. Make a query using $and, $or, $not and $nor
+3. Make a query using $gt, $lwe, $ne
+4. Make a query using $nin operator

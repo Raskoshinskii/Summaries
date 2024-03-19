@@ -1,0 +1,86 @@
+Main SQL Questions
+
+Constraints in DB
+1. What do you know about constraints? Name the main ones
+2. Create a table with the following constraints:
+- PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK
+
+Conditional Expressions
+1. Name the main conditional expressions
+2. Make queries with them
+
+Data Types
+1. How to change a data type of a field?
+2. Name main Data Types
+3. How to find out a column data type?
+
+Managing Tables
+1. What types of tables do you know?
+2. Why table aliases are important?
+3. Create a table
+4. Table Alteration:
+	- Create a new column
+	- Delete a column
+	- Rename a column
+	- Change data type of a column
+	- Change a value of a column, then change several columns in a single query
+	- Delete a row from a table
+	- Add a record in a table
+	- Add a record for a single column in a table
+	- Rename a table
+	- Delete a table (2 options)
+
+Indexes
+1. Why Indexes are useful?
+2. How to create an Index?
+3. How to delete an Index?
+4. How to find out info about Indexes
+5. Name two main type of Indexes
+
+Views
+1. What is a view?
+2. Name two main type of views?
+
+Windows Functions
+1. What is a window function?
+2. What is PARTITION BY
+2. What will happen if PARTITION BY is skipped
+
+Triggers
+1. What is a Trigger?
+2. How to create a trigger?
+3. Name two main type of triggers?
+
+SQL Fundamentals
+1. What functions commonly used in WHERE?
+2. What is JOIN? Name the main ones
+3. What rules must be followed when using UNION operator?
+4. What is a subquery?
+5. What is the difference between ANY and ALL operators. When to apply them?
+6. Order of SQL commands execution
+7. What is a relational Database?
+8. What is a correlated subquery?
+
+Main PL/PGSQL Questions
+
+1. What is a PL/PGSQL?
+2. What is a Dollar-Quoted String?
+3. Describe a block structure in PL/PGSQL?
+4. Tell about variables
+5. Tell about SELECT INTO operator (Demonstrate on an example)
+6. How to copy a data type?
+7. How to store a row returned by SELECT INTO operator into a variable? (Demonstrate on an example)
+8. What is the difference between RECORD and ROWЕTYPE?
+9. Tell About reporting messages and exceptions
+10. What is ASSERT?
+11. Tell about the main control elements and type of loops
+12. Tell about CONTINUE operator
+13. Name two main elements of a function + structure of a function definition
+14. Name types of parameters that a function can take in
+15. What is a function overloading in PL/PGSQL?
+16. How to create/drop a function
+17. What is the main drawback of a function?
+18. What is a procedure?
+19. How to create/drop a procedure?
+20. Tell about cursors
+21. What type of cursors do you know?

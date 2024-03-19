@@ -1,0 +1,69 @@
+**Conditional Expressions in PostgreSQL**
+- What does COALESCE function? What will be returned if all arguments are equal to NULL?
+- For what we usually apply COALESCE function?
+- How does NULLIF function work?
+- How does CASE function work?
+
+**Constraints in PostgreSQL**
+- What the main constraints for a table do you know?
+  - Tell about FOREIGN KEY, PRIMARY KEY, CHECK, GENERATED AS IDENTITY
+  - Can a table have many primary keys?
+
+**Data Types in PostgreSQL**
+- How to change a data type of a column in two ways?
+- How to find out a column data type?
+- Main data types:
+  - Boolean (what values can be set)
+  - Character Types
+  - Main pros and cons of NUMERIC data type
+    - Is NUMERIC and DECIMAL the same?
+  - INT, FLOAT, DOUBLE
+  - DATE + NOW(), TO_CHAR(), AGE(), EXTRACT()
+  - TIMESTAMP
+  - INTERVAL
+  - TIME
+
+**Dealing with Strings**
+- String concatenation (CONCAT, CONCAT_WS, ||)
+- Substring Extraction (LEFT, RIGHT, SUBSTRING)
+- String Splitting (SPLIT_PART)
+- Adding new symbols in a string (LPAD, RPAD)
+- String trimming and replacing (TRIM, LTRIM, REPLACE)
+
+**Tables**
+- Two types of tables
+- For what we use table aliases?
+- Is temp table visible for other sessions?
+- Create a table with data types and constraints
+- Change a table:
+  - add column, drop column, rename column, alter column data type
+  - rename a table, delete a row, change a value in a table
+  - add data into a table
+- Difference between delete and truncate
+
+**Fundamentals**
+- What is RDM (Relational Data Model)?
+- Is SQL sensitive to case (upper/lower case)
+- Can we use calculations in SELECT (formulas, statistics)
+- Tell about DISTINCT
+- What do you know about NULL values (aggregation, grouping)
+- LIMIT/OFFSET and FETCH FIRST n ROWS
+- Main commands for WHERE (IN, ILIKE, BETWEEN, IS NULL)
+- Order of logical operators (AND, OR, NOT)
+- What happens if we have several columns in ORDER BY
+- Tell about indexes in SQL (Intuition)
+- Tell about triggers (Intuition)
+- Tell about views (Intuition)
+
+**Joins**
+  - SELF-JOIN, INNER JOIN, LEFT/RIGHT JOIN, FULL JOIN, CROSS-JOIN
+  - Does self-join exist in MySQL?
+- Difference between COUNT() and COUNT(*)
+- What happens with NULL values in aggregation functions?
+- Difference between UNION and UNION ALL. Requirements for UNION, where ORDER BY must be placed?
+- INTERSECT and EXCEPT
+- Subquery and ANY, ALL, EXISTS
+- Order of SQL commands execution
+
+**Window_Functions**
+- Partition? Is PARTITION BY mandatory?

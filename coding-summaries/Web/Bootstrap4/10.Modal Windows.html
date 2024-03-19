@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap Tutorial</title>
+
+  <!-- viewport is used for depicted the oage on mobiles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Connect Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Connect  Bootstrap JS-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Modal Windows are just pop-up windows -->
+  <!-- data-target opens provided window (in our case block div will be opened) -->
+  <button class="btn btn-info" data-toggle="modal" data-target="#my_modal">Buy Items</button>
+  <!-- Modal Window creation. tabindex="-1" means that we can close the windown by tapping Esc-->
+  <!-- lass="modal" indicates that the pop-up window will be a modal window. property fade adds smoothness -->
+  <div id="my_modal" class="modal fade" tabindex="-1">
+    <!-- class="modal-dialog modal-sm" provides indents for the modal window -->
+    <div class="modal-dialog modal-lg">
+      <!-- class="modal-content" provides some indents as well -->
+      <div class="modal-content">
+        <!-- class="modal-header" describes the header of the modal window -->
+        <div class="modal-header">
+          <!-- closes the current modal window -->
+          <button class="close" data-dismiss="modal">x</button>
+          <h4 class="modal-title">Please, confirm the order</h4>
+          <div>
+            <div class="modal-body">Items</div>
+            <div class="modal-footer">
+              <button class="btn btn-success" data-dismiss="modal">Buy</button>
+              <button class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery. Put it in the end of the body to prevent too long downloading -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script>
+    $('#my_modal').on("hidden.bs.modal", function(event){
+      alert("Success!");
+    });
+  </script>
+
+</body>
+</html>
