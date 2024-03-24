@@ -1,0 +1,8 @@
+Fast Deletion
+- Press Ctr + Del to delete faster
+- Press Ctr + Alt + up/down to create several cursors
+
+Unindent:
+- Ctrl+[
+
+* wget url (to download the data)

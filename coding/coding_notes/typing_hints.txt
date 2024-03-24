@@ -1,0 +1,9 @@
+Fast Deletion
+- Press Ctr + Del to delete faster
+- Press Ctr + Alt + up/down to create several cursors
+
+Unindent:
+- Ctrl+[
+
+How to put all variables into quotes or double quotes?
+- Shift + "" or Shift + ''

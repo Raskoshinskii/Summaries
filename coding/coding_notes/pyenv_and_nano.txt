@@ -1,0 +1,28 @@
+NANO
+- Alt + / : jump to the end of a file
+- Cnt + z : exit from file
+- Cnt + o : save the changes 
+- Cnt + k : drop line 
+
+PYENV 
+# python versions
+	- pyenv install --list # lists all  python versions that can be installed
+	- pyenv install <pyton_version>
+	- pyenv versions 
+	- pyenv global <python_version> # sets certain python version globally
+	- pyenv local <python_version>
+	 # sets certain python version within a dicrectory and creates file '.python-version'
+	 # usually used for a certain project that requires certain python
+
+# virtual envs
+	# creation/deactivation
+	- pyenv virtualenvs # lists all available virtual envs
+	- pyenv virtualenv <python_version> <env_name> # creates virtual env
+	- pyenv activate <env_name> # activates venv, can activate from any directory
+	- pyenv deactivate # deactivates the current python venv 
+	- pyenv uninstall <env_name> # drops virtual env 
+# notes
+
+WSL
+- System drives are located in mnt folder
+-cd ~ # jump to home dir

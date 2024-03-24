@@ -1,0 +1,7 @@
+- jupyter labextension list
+- jupyter labextension disable/enable extension_name
+
+- jupyter labextension uninstall extension_name
+
+- jupyter lab clean
+- jupyter lab build

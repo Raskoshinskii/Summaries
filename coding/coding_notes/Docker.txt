@@ -1,0 +1,51 @@
+# TensorFlow Notebook
+docker pull tensorflow/tensorflow:latest-jupyter
+docker run -it --name tf_notebook -p 7777:8888 -v D:\docker_volumes\tf_notebooks:/home/jovyan/work jupyter/tensorflow-notebook
+docker start tf_notebook # (pswd: 123)
+
+# PySpark Notebook
+docker pull jupyter/pyspark-notebook
+docker run -it --name spark_notebook -p 7778:8888 -v D:\docker_volumes\spark_notebooks:/home/jovyan jupyter/pyspark-notebook
+docker start spark_notebook # (pswd: 123)
+
+# Redis
+docker pull redis
+docker run -d --name redis_db redis # NO VOLUME
+  - docker ps -a # LOOK UP REDIS_COTAINER_ID
+  - docker exec -it ID_HERE bash
+    - redic-cli ping # TEST COMMAND
+
+# ClickHouse
+docker run --name clickhouse_db yandex/clickhouse-server
+docker exec -it clickhouse_db bash
+
+
+# pgAdmin with Postgres
+1. Create PostgreSQL Network
+  docker network create pg_network
+
+2. Install Postgres
+docker run -d \
+  -e POSTGRES_USER="root" \
+  -e POSTGRES_PASSWORD="root" \
+  -e POSTGRES_DB="postgres_db" \
+  -v D:\docker_volumes\postgre_db:/var/lib/postgresql/data \
+  -p 5432:5432 \
+  --network=pg_network \
+  --name pg_db \
+  postgres:13
+
+docker run -d -e POSTGRES_USER="root" -e POSTGRES_PASSWORD="root" -e POSTGRES_DB="postgres_db" -v D:\docker_volumes\postgre_db:/var/lib/postgresql/data -p 5432:5432 --network=pg_network --name pg_db postgres:13
+
+3. Install pgAdmin
+docker run -d \
+  -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+  -e PGADMIN_DEFAULT_PASSWORD="root" \
+  -p 8080:80 \
+  -v D:\docker_volumes\pgadmin:/var/lib/pgadmin
+  --network=pg_network \
+  --name pgadmin \
+  dpage/pgadmin4
+
+docker run -d -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" -e PGADMIN_DEFAULT_PASSWORD="root" -p 8080:80 -v D:\docker_volumes\pgadmin:/var/lib/pgadmin --network=pg_network --name pgadmin dpage/pgadmin4
+

@@ -1,0 +1,66 @@
+What is SSH?
+------------
+SSH (Secure Shell) is a network protocol and a cryptographic method that is used to securely access and manage network devices, servers, and other systems over a potentially unsecured network. SSH provides a secure way to establish a remote connection to a computer or server, allowing users to perform various tasks, such as remote administration, file transfers, and executing commands on remote systems.
+
+Key features and components of SSH include:
+
+* Encryption: SSH uses encryption techniques to secure the communication between the client and the server. 
+  This ensures that data, including login credentials and commands, cannot be easily intercepted by eavesdroppers.
+
+* Authentication: SSH supports various authentication methods:
+	- password-based authentication
+	- public key authentication
+	- two-factor authentication
+  allowing users to prove their identity before accessing a remote system.
+
+* Secure Remote Access: SSH is commonly used for secure remote shell access.
+  Users can log in to a remote system and interact with it as if they were physically present.
+
+* Secure File Transfers: SSH is often used for secure file transfers 
+  using tools like SCP (Secure Copy Protocol) or SFTP (SSH File Transfer Protocol).
+
+* Port Forwarding: SSH supports port forwarding, allowing users to securely tunnel network traffic between local and remote hosts.
+  This feature is useful for accessing services that are otherwise restricted.
+
+* Key Pair Authentication: Public key authentication is a common and highly secure method for authenticating with SSH.
+  Users generate a key pair consisting of a public key and a private key. 
+  The public key is stored on the server, while the private key is kept secure on the user's local machine.
+
+
+- With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit.
+  You can also use an SSH key to sign commits. When you connect via SSH, you authenticate using a private key file on your local machine.
+
+SSH key can be futher secure by using:
+- Hardware security key (requires the physical hardware security key to be attached to your computer)
+- ssh-agent
+- pass pharse usage (requires pass phrase/password each time the key is used)
+
+What is randomart image?
+------------------------
+A randomart image (Randomart Fingerprint) is a graphical representation of an SSH key. It's a visual summary or fingerprint of an SSH key that is designed to provide a quick and distinctive way to verify and compare SSH keys visually.
+
+
+What is Clipboard in Linux?
+---------------------------
+It's a temporary data storage mechanism that allows users to copy, cut, and paste data (text, images, and files)
+between different applications and within the same application. However, Linux has multiple clipboard systems, which can lead to some complexity.
+The two primary clipboard systems used in Linux are:
+	* Primary Selection (Primary Clipboard)
+	* Clipboard (Clipboard Selection)
+
+
+How to set up SSH for GitHub?
+-----------------------------
+- https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh
+
+1. Open bash and run: 
+	ssh-keygen -t ed25519 -C "vladislavphysique@gmail.com"
+	* file in which to save the key: empty -> default 
+	* passpharse: empty -> default
+2. Get 2 keys - public and private. Copy public.
+3. Go to GitHub account and create a new SSH key
+4. Add for a new SSH key public one
+
+
+
+
