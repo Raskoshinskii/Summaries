@@ -1,0 +1,63 @@
+NLP Self Check
+--------------
+
+Must-have Knowledge
+-------------------
+Bag of Words
+    * What is it, describe the algorithm? Advantages and disadvantages.
+    * What class is used for it in Sklearn?
+        - What is an advantage of HashingVectorizer over CountVectorizer?
+        - How can we set a limit on vocabularly size using CountVectorizer?
+        - Is it possible to use binary features (presence or absence) instead of counts?
+
+Tokenization
+    * What is tokenization and why we need it?
+    * What type of tokenization do you lnow?
+
+Stemming and Lemmatization
+    * What is it and difference between them?
+    * What is Overstemming and Understemming?
+    * What stemming algorithms do you know?
+    * What are the main advantages of lemmatization?
+
+TF-IDF
+    * What is it. Advantages and disadvantages
+    * What ranges TF-IDF features take?
+    * How do you interpret features with high and low TF-IDF values?
+    * What the most important parameters of sklearn TfidfVectorizer do you know?
+
+N-Grams
+    * What are N-Grams?
+    * Why using N-Grams?
+    * Advantages and disadvantages?
+    * Char and Word N-Grams. What is the difference?
+
+Word2Vec
+    * What is an embedding?
+    * Explain Word2Vec algorithm
+    * What is the difference between CBOW and SkipGram?
+        - When would you prefer using CBOW to SkipGram?
+    * How can Word2Vec be trained faster?
+    * Advantages and disadvantages
+    * What type of activation function is used in a hidden layer and in output and why? How does NN architecture look like?
+    * What is FastText, Glove, AdaGram?
+    * Why word2vec models are trained using sentences?
+    * How can we average embeddings?
+    * How embeddings can be weighted?
+    * How we can create features from embeddings using clustering?
+
+Custom Features
+    * What custom features can be created from a text?
+
+RNN
+    * Why does RNN require padding on incoming sequences? How does padding work?
+    * Why it's not recommended ecluding stop words for training RNN?
+    * 
+    
+
+
+    
+    
+
+
+
